@@ -24,14 +24,13 @@ We created this implementation to address some of the short-comings in Postman v
     [![](./documentation/PostmanGitFolders.jpg)](./documentation/PostmanGitFolders.jpg)
 3. Create JSON files in each user folder that should be applied to postman when base-lining for each given environment.
 
-
 ### Variable Scopes
 
 1. **Global**: Contains variables that are required per the environment and rarely change.
 2. **Shared**: Contains all variables that are not considered global. When a new variable is created by a developer it should be added here for each environment file. This will make it available for all Postman Users.
 3. **User**: This contains static user specific overrides. These will overwrite the shared variable of the same key if it exists. Every user will have a folder containing their specific overrides.
 
-**Note**: Global variables are overridden by shared variables, which are overridden by User variables. ## Setup Postman Baseline variable request
+**Note**: Global variables are overridden by shared variables, which are overridden by User variables.
 
 ### File structure
 
@@ -171,6 +170,7 @@ If all is connected correctly Postman should return
         pm.environment.set(item.key, item.value);
     });
    ```
+
 The final request should look like
 
 [![](./documentation/PostmanVarRequest.jpg)](./documentation/PostmanVarRequest.jpg)
@@ -195,6 +195,5 @@ The great thing is this does not affect how Postman already works with variables
 - [Github API](https://developer.github.com/v3/#http-verbs)
 - [Creating an OAuth App in Github](https://auth0.com/docs/connections/social/github)
 - [Request OAuth token from API](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
-
 
 All screen shots taken running **localVariables** as the environment
