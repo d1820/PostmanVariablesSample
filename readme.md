@@ -179,6 +179,18 @@ If you no check the variables list it will show all the imported variables from 
 
 [![](./documentation/PostmanVarsSetAfterRequest.jpg)](./documentation/PostmanVarsSetAfterRequest.jpg)
 
+## How to use
+
+To take advantage of this system we implemented the following workflow
+
+As a developer we would clone the repo locally and update all profiles and Gloabl and Shared files as necessary when API changes happened that would effect current settings. Then everyone only had to **Get Latest** to get those updates and use locally.
+
+As a QA tester, they were given rights to the GitHub repo and allowed to update their userName folder files and set what ever baseline variables they wanted for their testing purposes and commit those changes.
+
+As API changes moved that required Postman value changes moved through the environments we would all as a team "Baseline" for the given environment which would update the GLOBAL and SHARED values for everyone. This has really helped with syncing new values for new APIs and updating clientIds and stuff based on API changes. This has also allowed for helping QA through issues cause we can easily pull their username files down locally and we have everything in our local environment the QA has and we an see what values may be off and correct them.
+
+The great thing is this does not affect how Postman already works with variables so we can still customize per request as im scenario testing just like we regularly do. We **ONLY** baseline when something on a wider scale has changed in an API as part of our regular planned sprint work. The power then also comes with the username custom variables so if we have personal values and stuff only for me those are all tracked in source control only our team has access to and has history to them all to so rollback is easily accomplished at this point.
+
 ## References
 - [Github API](https://developer.github.com/v3/#http-verbs)
 - [Creating an OAuth App in Github](https://auth0.com/docs/connections/social/github)
