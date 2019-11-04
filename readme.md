@@ -123,15 +123,15 @@ If all is connected correctly Postman should return
 
     ```JAVASCRIPT
     var baseGithubUrl = pm.variables.get("baseGithubUrl");
-var githubUser = pm.variables.get("githubUser");
-var githubRepoName = pm.variables.get("githubRepoName");
-var githubClientId = pm.variables.get("githubClientId");
-var githubClientSecret = pm.variables.get("githubClientSecret");
-var authQueryString = "?client_id=" + githubClientId + "&client_secret=" + githubClientSecret;
-var baseUrl = baseGithubUrl + githubUser+"/" + githubRepoName + "/master/";
+    var githubUser = pm.variables.get("githubUser");
+    var githubRepoName = pm.variables.get("githubRepoName");
+    var githubClientId = pm.variables.get("githubClientId");
+    var githubClientSecret = pm.variables.get("githubClientSecret");
+    var authQueryString = "?client_id=" + githubClientId + "&client_secret=" + githubClientSecret;
+    var baseUrl = baseGithubUrl + githubUser+"/" + githubRepoName + "/master/";
 
-var globalVariablesUrl = pm.variables.get("globalVariablesPath").replace("{0}", pm.variables.get("environment"));
-var sharedVariablesUrl = pm.variables.get("sharedVariablesPath").replace("{0}", pm.variables.get("environment"));
+    var globalVariablesUrl = pm.variables.get("globalVariablesPath").replace("{0}", pm.variables.get("environment"));
+    var sharedVariablesUrl = pm.variables.get("sharedVariablesPath").replace("{0}", pm.variables.get("environment"));
 
 
     pm.sendRequest({
