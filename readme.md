@@ -195,3 +195,6 @@ The great thing is this does not affect how Postman already works with variables
 - [Github API](https://developer.github.com/v3/#http-verbs)
 - [Creating an OAuth App in Github](https://auth0.com/docs/connections/social/github)
 - [Request OAuth token from API](https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/)
+
+
+All screen shots taken running **localVariables** as the environment
