@@ -161,7 +161,7 @@ If all is connected correctly Postman should return
     });
     ```
 
-4. Update the **Test** tab in the request with
+4. Update the **Tests** tab in the request with
 
    ```JAVASCRIPT
     var userOverrides = pm.response.json();
@@ -175,7 +175,7 @@ The final request should look like
 
 [![](./documentation/PostmanVarRequest.jpg)](./documentation/PostmanVarRequest.jpg)
 
-If you no check the variables list it will show all the imported variables from GLOBAL, SHARED and USER
+If you now check the variables list it will show all the imported variables from GLOBAL, SHARED and USER
 
 [![](./documentation/PostmanVarsSetAfterRequest.jpg)](./documentation/PostmanVarsSetAfterRequest.jpg)
 
