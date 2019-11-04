@@ -1,6 +1,10 @@
 [
   {
-    "key": "<VARNAME>",
-    "value": "<VALUE>"
+    "key": "TEST",
+    "value": "GLOBAL"
+  },
+  {
+    "key": "GLOBALCUSTOM",
+    "value": "GLOBAL CUSTOM"
   }
 ]

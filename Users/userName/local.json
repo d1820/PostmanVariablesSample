@@ -1,6 +1,10 @@
 [
   {
-    "key": "<VARNAME>",
-    "value": "<VALUE>"
+    "key": "TEST",
+    "value": "LOCAL"
+  },
+  {
+    "key": "CUSTOM",
+    "value": "LOCAL CUSTOM"
   }
 ]
